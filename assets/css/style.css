@@ -1,0 +1,45 @@
+body {
+    background-image:    url(../images/train-background.png);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
+
+.jumbotron {
+    border: solid black 1px;
+    opacity: 0.7;
+}
+
+.card-body {
+    background-color: transparent;
+}
+
+.table {
+    background-color: white;
+}
+
+h1, h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px;
+}
+
+.addTheTrain {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.card-header {
+    background-color: tan;
+}
+
+.table-head {
+    background-color: tan;
+}
+
+#add-train {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

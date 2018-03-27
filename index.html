@@ -3,15 +3,23 @@
 
 <head>
     <title>Train Game</title>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    
+    <!-- My stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
     <!-- Moment.js link -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
@@ -25,7 +33,7 @@
         </div>
 
         <table class="table table-hover" id="train-table">
-            <thead>
+            <thead class="table-head">
                 <tr>
                     <th scope="col">Train Name</th>
                     <th scope="col">Destination</th>
@@ -38,8 +46,8 @@
                 <!--data will populate here upon user input from the form below-->
             </tbody>
         </table>
-        <div class="card">
-            <div class="card-header">Add A Train</div>
+        <div class="card addTheTrain">
+            <div class="card-header"><strong>Add A Train</strong></div>
             <div class="card-body">
                 <form>
                     <div class="form-group">
@@ -58,7 +66,7 @@
                         <label for="exampleInputPassword1">Frequency</label>
                         <input class="form-control" id="freq-input">
                     </div>
-                    <button type="submit" id="add-train" class="btn btn-primary">Submit</button>
+                    <button type="submit" id="add-train" class="btn btn-success">Submit</button>
                 </form>
             </div>
         </div>
